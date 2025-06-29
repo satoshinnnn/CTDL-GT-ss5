@@ -14,7 +14,7 @@ int checkNum(char input[]) {
 int pow10(int n) {
     if (n==0)
         return 1;
-    return 10*pow10(n-1);
+    return 10*pow10(n-1); // vòng for chạy chạy ngược và trả giá giá trị cộng/trừ/nhân/chia dồn cho hàm, cho đến base case thì dừng 
 }
 int strToInt(char str[], int index, int length) {
     if (index==length) return 0;
